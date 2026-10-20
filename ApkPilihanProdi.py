@@ -22,3 +22,13 @@ frame = tk.Frame(
     pady=25
 )
 frame.pack(fill="both", expand=True, padx=15, pady=15)
+
+#Judul
+judul = tk.Label(
+    frame,
+    text="Aplikasi Prediksi Prodi Pilihan",
+    font=("Arial", 19, "bold"),
+    bg=PANEL,
+    fg=WHITE
+)
+judul.pack(pady=(5, 25))

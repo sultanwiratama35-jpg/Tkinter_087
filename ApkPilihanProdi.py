@@ -43,3 +43,28 @@ entries = []
 for i in range(10):
     baris = tk.Frame(frame_input, bg=PANEL)
     baris.pack(fill="x", pady=5)
+    
+    label = tk.Label(
+        baris,
+        text=f"Nilai Mata Pelajaran {i + 1}:",
+        font=("Arial", 10),
+        bg=PANEL,
+        fg=WHITE,
+        width=24,
+        anchor="e"
+    )
+    label.pack(side="left", padx=(0, 12))
+
+    entry = tk.Entry(
+        baris,
+        font=("Arial", 11),
+        width=16,
+        bg=ENTRY_BG,
+        fg=WHITE,
+        insertbackground=WHITE,
+        relief="flat",
+        justify="center"
+    )
+    entry.pack(side="left", ipady=4)
+
+    entries.append(entry)

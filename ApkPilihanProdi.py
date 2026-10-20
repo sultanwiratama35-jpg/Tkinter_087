@@ -130,3 +130,9 @@ label_hasil = tk.Label(
     justify="center"
 )
 label_hasil.pack(pady=(15, 5))
+
+# Fokus ke input pertama
+entries[0].focus_set()
+
+#MENJALANKAN APLIKASI
+root.mainloop()

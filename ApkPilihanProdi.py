@@ -39,3 +39,7 @@ frame_input = tk.Frame(frame, bg=PANEL)
 frame_input.pack()
 
 entries = []
+
+for i in range(10):
+    baris = tk.Frame(frame_input, bg=PANEL)
+    baris.pack(fill="x", pady=5)

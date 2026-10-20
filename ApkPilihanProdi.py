@@ -94,4 +94,39 @@ jurusan = ttk.Combobox(
 )
 jurusan.set("Teknologi Informasi")
 jurusan.pack(pady=(0, 20))
-    
+
+
+#FUNGSI HASIL PREDIKSI
+def hasil_prediksi():
+    label_hasil.config(
+        text="Hasil Prediksi: Teknologi Informasi"
+    )
+
+#TOMBOL HASIL PREDIKSI
+tombol = tk.Button(
+    frame,
+    text="Hasil Prediksi",
+    command=hasil_prediksi,
+    font=("Arial", 11, "bold"),
+    bg=ACCENT,
+    fg="#302775",
+    activebackground=WHITE,
+    activeforeground="#302775",
+    relief="raised",
+    bd=2,
+    padx=15,
+    pady=7,
+    cursor="hand2"
+)
+tombol.pack(pady=5)
+
+label_hasil = tk.Label(
+    frame,
+    text="Hasil prediksi akan ditampilkan di sini.",
+    font=("Arial", 11, "bold"),
+    bg=PANEL,
+    fg=WHITE,
+    wraplength=450,
+    justify="center"
+)
+label_hasil.pack(pady=(15, 5))

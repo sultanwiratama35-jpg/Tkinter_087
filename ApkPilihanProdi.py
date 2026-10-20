@@ -32,3 +32,10 @@ judul = tk.Label(
     fg=WHITE
 )
 judul.pack(pady=(5, 25))
+
+#INPUT 10 NILAI MATA PELAJARAN
+
+frame_input = tk.Frame(frame, bg=PANEL)
+frame_input.pack()
+
+entries = []

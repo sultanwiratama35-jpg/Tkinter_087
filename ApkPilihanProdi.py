@@ -68,3 +68,30 @@ for i in range(10):
     entry.pack(side="left", ipady=4)
 
     entries.append(entry)
+    
+    #PILIHAN JURUSAN
+    
+    label_jurusan = tk.Label(
+    frame,
+    text="Pilihan Jurusan Anda:",
+    font=("Arial", 11, "bold"),
+    bg=PANEL,
+    fg=WHITE
+)
+label_jurusan.pack(pady=(25, 8))
+
+jurusan = ttk.Combobox(
+    frame,
+    values=[
+        "Teknologi Informasi",
+        "Informatika",
+        "Sistem Informasi"
+    ],
+    state="readonly",
+    font=("Arial", 10),
+    width=23,
+    justify="center"
+)
+jurusan.set("Teknologi Informasi")
+jurusan.pack(pady=(0, 20))
+    

@@ -13,3 +13,12 @@ PANEL = "#493DB5"
 ENTRY_BG = "#6559C9"
 WHITE = "#FFFFFF"
 ACCENT = "#DCD7FF"
+
+# Frame Utama
+frame = tk.Frame(
+    root,
+    bg=PANEL,
+    padx=25,
+    pady=25
+)
+frame.pack(fill="both", expand=True, padx=15, pady=15)
